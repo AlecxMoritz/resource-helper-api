@@ -13,8 +13,8 @@ sequelize.sync();
 app.use(express.static('public'));
 app.use(bodyParser.json())
 
-app.use(require('./middleware/headers'))
 app.use('/user', user)
+app.use(require('./middleware/headers'))
 
 app.use(require('./middleware/validate-session'))
 app.use('/topic', topic)

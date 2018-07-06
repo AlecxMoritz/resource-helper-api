@@ -17,5 +17,5 @@ sequelize.authenticate().then(
         console.log("an exception occured: ", err )
     }
 )
-
+// 
 module.exports = sequelize;

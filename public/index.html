@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Resource Helper Endpoints</title>
+</head>
+<body>
+    <section id="header" class="mainTextColor">
+        <h1>Resource Helper Endpoints</h1>
+    </section>
+    <section>
+        <div>
+            <h3 class="mainTextColor">User Controller</h3>
+            <p>sign up -- http://localhost:4200/user/signup</p>
+            <p>sign in -- http://localhost:4200/user/signin</p>
+        </div>
+        <div>
+            <h3 class="mainTextColor">Topics Controller</h3>
+            <p>get all by user_uid -- http://localhost:4200/topic/</p>
+            <p>get one by user_uid -- http://localhost:4200/topic/:uid</p>
+            <p>new topic -- http://localhost:4200/topic/new</p>
+            <p>update topic -- http://localhost:4200/topic/update/:uid</p>
+            <p>delete topic -- http://localhost:4200/topic/delete/:uid</p>
+        </div>
+        <div>
+            <h3 class="mainTextColor">Resource Controller</h3>
+            <p>get all by user_uid -- http://localhost:4200/resource/</p>
+            <p>get one by uid http://localhost:4200/resource/:uid</p>
+            <p>get all by topic_uid -- http://localhost:4200/resource/topics/u:id</p>
+            <p>new resource -- http://localhost:4200/resource/new</p>
+            <p>update resource -- http://localhost:4200/resource/update/:uid</p>
+            <p>delete resource -- http://localhost:4200/resource/delete/:uid</p>
+        </div>
+    </section>
+    <footer id="footerSection">
+        <center><p>;)</p></center>
+    </footer>
+</body>
+</html>

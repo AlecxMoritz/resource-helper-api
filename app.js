@@ -7,9 +7,8 @@ var topic = require('./controllers/topicController');
 var resource = require('./controllers/resourceController');
 var bodyParser = require('body-parser');
 
-
 sequelize.sync();
-// {force: true}
+
 app.use(express.static('public'));
 app.use(bodyParser.json())
 
@@ -21,6 +20,5 @@ app.use('/topic', topic)
 app.use('/resource', resource)
 
 app.listen(process.env.PORT, function() {
-    console.log("Welcome, Alecx");
-    console.log("App is spinning on 4200")
+    console.log("App is spinning on ", process.env.PORT)
 })

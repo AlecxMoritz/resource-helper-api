@@ -3,7 +3,7 @@ var Users = require('./models/user');
 var Topics = require('./models/topic');
 var Resources = require('./models/resource');
 
-const sequelize = new Sequelize('process.env.DATABASE_URL', 'postgres', 'ghastb0i', {
+const sequelize = new Sequelize(process.env.DATABASE_URL, 'postgres', 'ghastb0i', {
     host: 'localhost',
     dialect: 'postgres'
 });
